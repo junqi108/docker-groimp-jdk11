@@ -6,7 +6,7 @@
 
 ## need to add ext folder for jocl.jar, jogl.jar, gluegen-rt.jar
 ## lauch groimp
-java "-Xmx${JAVA_XMX}M" -Xverify:none -cp "${GROIMP_DIR}/jocl.jar:${GROIMP_DIR}/jogl.jar:${GROIMP_DIR}/gluegen-rt.jar" --module-path "${GROIMP_DIR}/Platform-Core/:${GROIMP_DIR}/Graph/:${GROIMP_DIR}/Utilities/:${GROIMP_DIR}/XL-Core/" --module platform.core/de.grogra.pf.boot.Main --project-tree
+java "-Xmx${JAVA_XMX}M" -Xverify:none -cp "${GROIMP_DIR}/ext/jocl.jar:${GROIMP_DIR}/ext/jogl.jar:${GROIMP_DIR}/ext/gluegen-rt.jar" --module-path "${GROIMP_DIR}/Platform-Core/:${GROIMP_DIR}/Graph/:${GROIMP_DIR}/Utilities/:${GROIMP_DIR}/XL-Core/" --module platform.core/de.grogra.pf.boot.Main --project-tree
 
 #### Due to Oracle's authentication requirement, users need to download the java version by themselves and put into the java folder before running the docker build
 
